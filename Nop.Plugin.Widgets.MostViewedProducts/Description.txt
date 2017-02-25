@@ -1,0 +1,9 @@
+﻿Group: Widgets
+FriendlyName: Most Viewed Products
+SystemName: Widgets.MostViewedProducts
+Version: 1.00
+SupportedVersions: 3.80
+Author: Reşit Akyüz
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.MostViewedProducts.dll
+Description: This plugin allows you to show most viewed products on home page
