@@ -8,6 +8,7 @@ using Nop.Data;
 using Nop.Web.Framework.Mvc;
 using Nop.Plugin.Widgets.MostViewedProducts.Services;
 using Nop.Plugin.Widgets.MostViewedProducts.Models;
+using System.Web.Mvc;
 
 namespace Nop.Plugin.Widgets.MostViewedProducts
 {
@@ -26,7 +27,7 @@ namespace Nop.Plugin.Widgets.MostViewedProducts
         {
             builder.RegisterType<MVPService>().As<IMVPService>().InstancePerLifetimeScope();
             builder.RegisterType<ProductReportService>().As<IProductReportService>().InstancePerLifetimeScope();
-
+            builder.RegisterType<MVPActionFilter>().As<IFilterProvider>().SingleInstance();
             //data context
             this.RegisterPluginDataContext<MVPObjectContext>(builder, "nop_object_context_mvp");
 

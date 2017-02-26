@@ -273,5 +273,6 @@ namespace Nop.Plugin.Widgets.MostViewedProducts.Controllers
                 productThumbPictureSize, prepareSpecificationAttributes,
                 forceRedirectionAfterAddingToCart);
         }
+        
     }
 }

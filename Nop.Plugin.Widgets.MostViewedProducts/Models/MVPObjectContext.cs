@@ -38,10 +38,10 @@ namespace Nop.Plugin.Widgets.MostViewedProducts.Models
 
             Database.ExecuteSqlCommand(CreateDatabaseInstallationScript());
 
-            //var dbScript = "INSERT INTO Setting VALUES ('mostviewedcatalogsettings.showmvponhomepage','True',0);INSERT INTO Setting VALUES('mostviewedcatalogsettings.numberofmvponhomepage',4,0); ";
-            //Database.ExecuteSqlCommand(dbScript);
+            var dbScript = "INSERT INTO Setting VALUES ('mvpsettings.showmvponhomepage','True',0);INSERT INTO Setting VALUES('mvpsettings.numberofmvponhomepage',4,0); ";
+            Database.ExecuteSqlCommand(dbScript);
 
-            var dbScript = "INSERT INTO LocaleStringResource(LanguageId,ResourceName,ResourceValue) VALUES ('1','MVP.Settings.ShowMVPOnHomepage','Show most viewed products on homepage?');";
+            dbScript = "INSERT INTO LocaleStringResource(LanguageId,ResourceName,ResourceValue) VALUES ('1','MVP.Settings.ShowMVPOnHomepage','Show most viewed products on homepage?');";
 
             dbScript += "INSERT INTO LocaleStringResource(LanguageId,ResourceName,ResourceValue) VALUES ('1','MVP.Settings.ShowMVPOnHomepage.hint','Check to show most viewed products on homepage');";
             dbScript += "INSERT INTO LocaleStringResource(LanguageId,ResourceName,ResourceValue) VALUES ('1','MVP.Settings.NumberOfMVPOnHomepage','Number of most viewed products on homepage');";

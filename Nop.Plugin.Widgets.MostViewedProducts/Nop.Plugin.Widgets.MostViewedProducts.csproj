@@ -96,18 +96,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MVPController.cs" />
-    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DependencyRegistrar.cs" />
-    <Compile Include="GenericPathRoute.cs" />
-    <Compile Include="GenericPathRouteExtensions.cs" />
     <Compile Include="Models\MVPSettings.cs" />
     <Compile Include="Models\MVPSettingsModel.cs" />
     <Compile Include="Models\MostViewedProduct.cs" />
     <Compile Include="Models\MostViewedProductMap.cs" />
     <Compile Include="Models\MVPObjectContext.cs" />
     <Compile Include="MostViewedProducts.cs" />
+    <Compile Include="MVPActionFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GenericUrlRouteProvider.cs" />
     <Compile Include="Services\IMVPService.cs" />
     <Compile Include="Services\IProductReportService.cs" />
     <Compile Include="Services\MVPService.cs" />
